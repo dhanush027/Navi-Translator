@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+:root {
+    --primary-color: #3B82F6;
+    --light-blue: #67E8F9;
+    --text-box-variant: #E0E7FF;
+}
+
+#input-text {
+    background-color: var(--text-box-variant);
+    width: 600px;
+    height: 170px;
+    font-family: inherit;
+    font-size: 25px;
+
+}
+
+#output-text {
+    background-color: var(--text-box-variant);
+    width: 600px;
+    height: 170px;
+    font-family: inherit;
+    font-size: 20px;
+
+}
+
+body {
+    margin: 0px;
+    font-family: "Dancing Script", sans-serif;
+    color: white;
+    background-color: var(--light-blue);
+}
+
+#btn-translate {
+    border-radius: 1.8rem;
+    padding: 0.7rem;
+    width: 100px;
+    background-color: #93C5FD;
+    margin: 1rem 0rem 0rem 0rem;
+    border-collapse: collapse;
+    transition: transform .5s;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+#btn-translate:hover {
+    background-color: #60A5FA;
+    transform: scale(1.1);
+
+}
+
+header {
+    background-color: var(--primary-color);
+    margin: 0px;
+    padding: 0.2rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.wrapper {
+    padding: 2rem;
+    margin: auto;
+    max-width: 600px;
+}
+
+.spacing {
+    padding: 1rem 0rem;
+    color: black;
+    font-size: 20px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    text-align: justify;
+    color: black;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    margin: 8rem 0rem 0rem 0rem;
+    max-height: 500px;
+    font-size: 20px;
+}
+
+.whitespace-footer {
+    background-color: #93C5FD;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.txtDisplay {
+    max-width: 680px;
+    max-height: 200px;
+    margin: auto;
+}
