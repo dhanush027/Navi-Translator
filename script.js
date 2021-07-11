@@ -12,7 +12,10 @@ var serverURL = "https://api.funtranslations.com/translate/navi.json"
 function urlGenerator(text) {
     return serverURL + "?" + "text=" + text
 }
-
+function errorHandler(error){
+    console.log("Error occured:",error)
+    alert("Only 5 requests per hour,Please try again after an hour! ")
+}
 
 function clickHandler() {
     var txtInput = inputText.value
@@ -22,6 +25,7 @@ function clickHandler() {
             var translate = json.contents.translated
             outputText.innerText = translate
         })
+        .catch(errorHandler)
 }
 
 
